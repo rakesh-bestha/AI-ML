@@ -9,3 +9,15 @@ print("--Full Conversation History--", conversation)
 
 for msg in conversation:
     print(msg)
+
+#Practice-2
+
+def format_api_response(model,prompt,tokens):
+    dict = {
+        "model":model, 
+        "prompt": prompt, 
+        "tokens":tokens
+    }
+    return dict
+sample = format_api_response("GPT-4","What is Python",2)
+sample
