@@ -1,0 +1,11 @@
+#Practice-1
+
+conversation = []
+for i in range(3):
+    message = input(f"Enter Your {i+1} message:")
+    conversation.append(message)
+    
+print("--Full Conversation History--", conversation)
+
+for msg in conversation:
+    print(msg)
