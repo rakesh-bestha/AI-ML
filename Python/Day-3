@@ -1,1 +1,17 @@
+Q.Write a function calculate_area(shape, **dimensions) that calculates the area of a 'rectangle' (needs widt radius ).
+
+import math
+def calculate_area(shape, **dim):
+    if shape == 'rectangle':
+        return dim['width']*dim['length']
+    elif shape == 'circle':
+        return math.pi*dim['radius']
+    else:
+        return "Unknown shape"
+
+output:
+calculate_area('circle', radius = 23) -> 72.25663103256524
+
+calculate_area('rectangle', width = 14, length = 32) -> 448
+
 
