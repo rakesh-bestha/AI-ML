@@ -1,4 +1,4 @@
-##Functions
+## Functions
 
 Q1.Write a function calculate_area(shape, **dimensions) that calculates the area of a 'rectangle' (needs widt radius ).
 
