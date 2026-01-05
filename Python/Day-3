@@ -1,4 +1,4 @@
-Q.Write a function calculate_area(shape, **dimensions) that calculates the area of a 'rectangle' (needs widt radius ).
+Q1.Write a function calculate_area(shape, **dimensions) that calculates the area of a 'rectangle' (needs widt radius ).
 
 import math
 def calculate_area(shape, **dim):
@@ -15,3 +15,12 @@ calculate_area('circle', radius = 23) -> 72.25663103256524
 calculate_area('rectangle', width = 14, length = 32) -> 448
 
 
+Q2.Write a function is_even (n) that returns True if a number is even and False otherwise.
+def is_even(n):
+    if n%2 == 0:
+        print("True")
+    else:
+        print("False")
+
+Output:
+is_even(5) -> False
