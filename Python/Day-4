@@ -3,21 +3,30 @@
 Write a Python program to create a file named notes.txt and write "Learning Python is fun!" into it.
 with open('notes.txt', 'w') as f:
     f.write("Learning Python is Fun!")
-# ***Output:Learning Python is Fun!***
-
+***Output:Learning Python is Fun!***
+---
 Read the first 5 characters of notes.txt and print them.
 with open('notes.txt', 'r') as f:
     data = f.read(5)
     print (data)
-# ***Output:Learn***
+***Output:Learn***
 ---
 
 ## **Medium**
 
 Write a function `count_words(filename)` that returns the total number of words in a given text file.
-
+def count_words(file):
+    try:
+        with open('notes.txt', 'r') as f:
+            return len(f.read().split())
+    except FileNotFoundError:
+            print("File Not Found")
+***Output:Learn***
+---
 Create a program that reads a file and writes its content into a new file named `backup.txt`, but in **all uppercase letters**.
-
+with open('notes.txt', 'r') as source, open('bkp.txt', 'w') as bkp:
+    bkp.write(source.read().upper())
+***Output:LEARNING PYTHON IS FUN!*** in saperate bkp.txt file
 ---
 
 ## **Hard**
