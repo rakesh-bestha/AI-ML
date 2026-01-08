@@ -1,20 +1,25 @@
 ## **Easy**
 
 Write a Python program to create a file named notes.txt and write "Learning Python is fun!" into it.
+
 with open('notes.txt', 'w') as f:
     f.write("Learning Python is Fun!")
 ***Output:Learning Python is Fun!***
+
 ---
 Read the first 5 characters of notes.txt and print them.
+
 with open('notes.txt', 'r') as f:
     data = f.read(5)
     print (data)
 ***Output:Learn***
+
 ---
 
 ## **Medium**
 
 Write a function `count_words(filename)` that returns the total number of words in a given text file.
+
 def count_words(file):
     try:
         with open('notes.txt', 'r') as f:
@@ -22,17 +27,22 @@ def count_words(file):
     except FileNotFoundError:
             print("File Not Found")
 ***Output:Learn***
+
 ---
 Create a program that reads a file and writes its content into a new file named `backup.txt`, but in **all uppercase letters**.
+
 with open('notes.txt', 'r') as source, open('bkp.txt', 'w') as bkp:
     bkp.write(source.read().upper())
 ***Output:LEARNING PYTHON IS FUN!*** in saperate bkp.txt file
+
 ---
 
 ## **Hard**
 
 Given a CSV-like text file `scores.txt` with content:
 
+with open('score.txt', 'w') as f:
+    f.write('Alice,80\nBob,86\nRaj,78')
 ```
 Alice,85
 Bob,92
@@ -41,14 +51,28 @@ Charlie,78
 
 Write a script to calculate the **average score**.
 
+Scores = []
+try:
+    with open ('score.txt', 'r') as f:
+        for line in f:
+            name, score = line.strip().split(",")
+            Scores.append(int(score))
+        avg = sum(Scores)/len(Scores)
+except FileNotFoundError:
+    print("File Not Found")
+
+avg
+
+***Output:81.33333333333333***
+
 Write a robust script that tries to open a file provided by user input. If the file doesn't exist, it should catch the **FileNotFoundError** and print a friendly message instead of crashing.
 
+filename = input("Enter filename: ")
+
+try:
+    with open(filename, 'r') as f:
+        print(f.read())
+except FileNotFoundError:
+    print("File not found. Please enter a valid filename.")
+
 ---
-
-If you want, I can also:
-
-* Provide **answers for each question**
-* Convert these into **interview-style coding tasks**
-* Add **edge cases & explanations**
-
-Just tell me 👍
