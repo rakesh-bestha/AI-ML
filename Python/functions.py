@@ -1,7 +1,7 @@
 # Functions
 
-Function let you create a task once and you can use it more than once in your code.
-"""
+'''Function let you create a task once and you can use it more than once in your code.'''
+
 
 def greet():
   print("Hello, Everyone!")
