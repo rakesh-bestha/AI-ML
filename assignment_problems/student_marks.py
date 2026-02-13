@@ -68,7 +68,7 @@ else:
 
     print(f"Student Name: {std_name}")
     print(f"Total Marks: {total_marks}")
-    print(f"Percentage: {percentage}")
+    print(f"Percentage: {percentage:.2f}")
     print(f"Status: {status}")
     if status == "PASS":
         if percentage >= 75:
