@@ -1,3 +1,53 @@
+'''
+Problem Statement:
+Write a simple Python program to evaluate a student's result using conditional statements.
+
+Requirements:
+Ask the user to enter:Student name, Marks in Maths, Science, and English
+
+Validate the marks:
+If any mark is less than 0 or greater than 100, print Invalid marks entered and stop the program.
+
+Calculate:
+Total marks
+Average percentage
+Determine Pass / Fail:
+
+If any subject mark is below 40, the student fails
+Otherwise, the student passes
+If the student passes, assign a grade:
+
+A → Average ≥ 75
+B → Average ≥ 60 and < 75
+C → Average ≥ 40 and < 60
+Display:
+
+Student name
+Total marks
+Average percentage (2 decimal places)
+Pass/Fail status
+Grade (only if passed)
+Expected Interaction:
+Enter student name: Rahul
+
+Enter Maths marks: 78
+
+Enter Science marks: 65
+
+Enter English marks: 82
+
+Student Name: Rahul
+
+Total Marks: 225
+
+Percentage: 75.00
+
+Status: PASS
+
+Grade: A
+
+'''
+
 std_name = input("Enter Student Name: ")
 math_marks = int(input("Enter Maths Marks: "))
 sci_marks = int(input("Enter Science Marks: "))
