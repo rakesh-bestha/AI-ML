@@ -1,6 +1,4 @@
-# AI-ML Projects — Rakesh Bestha
-
-Network Engineer transitioning into AI/ML Engineering.
+# AI-ML Leaning Curve with Masai School
 
 ## Projects
 
