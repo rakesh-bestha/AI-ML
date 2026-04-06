@@ -158,25 +158,3 @@ python main.py
 
 ---
 
-## 🔮 Future Improvements
-
-- [ ] Deep Learning model (LSTM for sequential traffic analysis)
-- [ ] Real-time packet capture integration with Scapy
-- [ ] Streamlit web dashboard for live anomaly monitoring
-- [ ] Docker containerization for deployment
-- [ ] SHAP values for model explainability
-
----
-
-## 👤 Author
-
-**Your Name**  
-Network Engineer → Aspiring AI/ML Engineer  
-📧 your.email@gmail.com  
-🔗 [LinkedIn](https://linkedin.com/in/yourprofile) | [GitHub](https://github.com/yourusername)
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License — see [LICENSE](LICENSE) for details.
