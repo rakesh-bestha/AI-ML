@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environment
+venv/
+.env/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data files (too large for GitHub)
+data/KDDTrain+.txt
+data/KDDTest+.txt
+
+# Outputs
+outputs/models/*.pkl
+outputs/predictions.db
+outputs/test_predictions.db
+
+# Plots (optional — remove this if you want to commit plots)
+# outputs/plots/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
