@@ -90,36 +90,6 @@ Raw Data ──► Data Loading ──► Preprocessing ──► Feature Engine
 
 ---
 
-## ⚙️ Installation & Setup
-
-### 1. Clone the repository
-```bash
-git clone https://github.com/yourusername/network-anomaly-detection.git
-cd network-anomaly-detection
-```
-
-### 2. Create a virtual environment
-```bash
-python -m venv venv
-source venv/bin/activate      # Linux/Mac
-venv\Scripts\activate         # Windows
-```
-
-### 3. Install dependencies
-```bash
-pip install -r requirements.txt
-```
-
-### 4. Download the dataset
-Download NSL-KDD from the link above and place files in `data/`.
-
-### 5. Run the pipeline
-```bash
-python main.py
-```
-
----
-
 ## 📈 Results
 
 | Model | Accuracy | Precision | Recall | F1-Score |
